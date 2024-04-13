@@ -54,7 +54,6 @@ namespace EfFuncCallSK.Controllers
             return View(chatHistories); // Make sure you have a corresponding view to display this list
         }
         // GET: ChatHistory
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.ChatHistories.ToListAsync());

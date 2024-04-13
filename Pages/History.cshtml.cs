@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Identity;
 
 namespace EfFuncCallSK.Pages
 {
-    [Authorize]
     public class HistoryModel : PageModel
     {
         private readonly ApplicationDbContext _context;
